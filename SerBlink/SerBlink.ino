@@ -33,6 +33,14 @@ void loop() {
                 digitalWrite(led, LOW);
                 Serial.println("[-] LED 13 OFF");
                 break;
+            case 'w':
+              Serial.println("[*] LED 13 BLINKING 100 times");
+              for (int x = 0; x <= 100; x++) {
+                  digitalWrite(led,HIGH);
+                  delay(30);
+                  digitalWrite(led,LOW);
+                  delay(30);
+              }
         }
     }
 }
